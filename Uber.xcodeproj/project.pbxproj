@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		253F2A9D2A4712C900093E7C /* UberApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253F2A9C2A4712C900093E7C /* UberApp.swift */; };
-		253F2A9F2A4712C900093E7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253F2A9E2A4712C900093E7C /* ContentView.swift */; };
 		253F2AA12A4712CB00093E7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 253F2AA02A4712CB00093E7C /* Assets.xcassets */; };
 		253F2AA42A4712CB00093E7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 253F2AA32A4712CB00093E7C /* Preview Assets.xcassets */; };
+		25E47B762A4B242D008ECFC6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E47B752A4B242D008ECFC6 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		253F2A992A4712C900093E7C /* Uber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Uber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		253F2A9C2A4712C900093E7C /* UberApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberApp.swift; sourceTree = "<group>"; };
-		253F2A9E2A4712C900093E7C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		253F2AA02A4712CB00093E7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		253F2AA32A4712CB00093E7C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		25E47B752A4B242D008ECFC6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +51,11 @@
 		253F2A9B2A4712C900093E7C /* Uber */ = {
 			isa = PBXGroup;
 			children = (
-				253F2A9C2A4712C900093E7C /* UberApp.swift */,
-				253F2A9E2A4712C900093E7C /* ContentView.swift */,
+				25E47B712A4B220C008ECFC6 /* App */,
+				25E47B702A4B2206008ECFC6 /* Core */,
+				25E47B6F2A4B2205008ECFC6 /* Extensions */,
+				25E47B6E2A4B2204008ECFC6 /* Managers */,
+				25E47B6C2A4B21F9008ECFC6 /* Models */,
 				253F2AA02A4712CB00093E7C /* Assets.xcassets */,
 				253F2AA22A4712CB00093E7C /* Preview Content */,
 			);
@@ -65,6 +68,59 @@
 				253F2AA32A4712CB00093E7C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		25E47B6C2A4B21F9008ECFC6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		25E47B6E2A4B2204008ECFC6 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		25E47B6F2A4B2205008ECFC6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		25E47B702A4B2206008ECFC6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				25E47B722A4B2407008ECFC6 /* ViewModels */,
+				25E47B742A4B241C008ECFC6 /* Views */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		25E47B712A4B220C008ECFC6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				253F2A9C2A4712C900093E7C /* UberApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		25E47B722A4B2407008ECFC6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		25E47B742A4B241C008ECFC6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				25E47B752A4B242D008ECFC6 /* HomeView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +193,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				253F2A9F2A4712C900093E7C /* ContentView.swift in Sources */,
 				253F2A9D2A4712C900093E7C /* UberApp.swift in Sources */,
+				25E47B762A4B242D008ECFC6 /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

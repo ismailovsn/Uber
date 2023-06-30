@@ -32,7 +32,11 @@ struct LocationSearchRow: View {
             .padding(.leading, 8)
 //            .padding(.vertical, 8)
         }
-        .padding(.leading)    }
+        .padding(.leading)
+        .background(
+            Color.white.opacity(0.001)
+        )
+    }
 }
 
 struct LocationSearchRow_Previews: PreviewProvider {

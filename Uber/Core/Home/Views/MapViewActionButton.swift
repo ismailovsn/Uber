@@ -35,7 +35,7 @@ struct MapViewActionButton: View {
         case .searchingForLocation:
             mapState = .noInput
         case .locationSelected:
-            print("DEBUG: clear map view...")
+            mapState = .noInput
         }
     }
     

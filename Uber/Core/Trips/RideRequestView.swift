@@ -13,6 +13,7 @@ struct RideRequestView: View {
             Capsule()
                 .foregroundColor(Color(.systemGray5))
                 .frame(width: 48, height: 6)
+                .padding(.top, 8)
             
             tripInfo
             Divider()
@@ -37,7 +38,9 @@ struct RideRequestView: View {
             
             requestRideButton
         }
+        .padding(.bottom, 24)
         .background(.white)
+        .cornerRadius(12)
     }
 }
 

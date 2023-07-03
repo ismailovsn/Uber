@@ -82,20 +82,22 @@ extension RideRequestView {
                     
                     Spacer()
                     
-                    Text("1:30PM")
+                    Text(locationViewModel.pickupTime ?? "")
                         .font(.system(size: 14, weight: .semibold))
                         .foregroundColor(.gray)
                 }
                 .padding(.bottom, 10)
                 
                 HStack {
-                    Text("Starbucks Coffee")
-                        .font(.system(size: 16, weight: .semibold))
-                        .foregroundColor(.black)
+                    if let location = locationViewModel.selectedUberLocation {
+                        Text(location.title)
+                            .font(.system(size: 16, weight: .semibold))
+                            .foregroundColor(.black)
+                    }
                     
                     Spacer()
                     
-                    Text("1:45PM")
+                    Text(locationViewModel.dropOffTime ?? "")
                         .font(.system(size: 14, weight: .semibold))
                         .foregroundColor(.gray)
                 }

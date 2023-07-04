@@ -42,7 +42,7 @@ struct RideRequestView: View {
             requestRideButton
         }
         .padding(.bottom, 24)
-        .background(.white)
+        .background(Color.theme.background)
         .cornerRadius(12)
     }
 }
@@ -65,7 +65,6 @@ extension RideRequestView {
                 .frame(width: 1, height: 32)
             
             Rectangle()
-                .fill(.black)
                 .frame(width: 8, height: 8)
         }
     }
@@ -92,7 +91,6 @@ extension RideRequestView {
                     if let location = locationViewModel.selectedUberLocation {
                         Text(location.title)
                             .font(.system(size: 16, weight: .semibold))
-                            .foregroundColor(.black)
                     }
                     
                     Spacer()
@@ -125,8 +123,8 @@ extension RideRequestView {
                     .padding(8)
                 }
                 .frame(width: 112, height: 140)
-                .foregroundColor(type == selectedRideType ? .white : .black)
-                .background(Color(type == selectedRideType ? .systemBlue : .systemGroupedBackground))
+                .foregroundColor(type == selectedRideType ? .white : Color.theme.primaryText)
+                .background(type == selectedRideType ? .blue : Color.theme.secondaryBackground)
                 .scaleEffect(type == selectedRideType ? 1.1 : 1.0)
                 .cornerRadius(10)
                 .onTapGesture {
@@ -159,7 +157,7 @@ extension RideRequestView {
                 .padding()
         }
         .frame(height: 50)
-        .background(Color(.systemGroupedBackground))
+        .background(Color.theme.secondaryBackground)
         .cornerRadius(10)
         .padding(.horizontal)
     }
